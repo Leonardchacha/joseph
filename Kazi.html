@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Button Example</title>
+<h1>CODE TO DEMOSTRATE JQUERY ID & CLASS SELECT ACTIVATED BY MULTIPLE BUTTONS</h1>
+<script src="jquery-3.7.1.js"></script>
+
+<script>
+//ID selector
+
+$(document).ready(function(){
+$("#button1").click(function(){
+alert("Mfano wa ID to be unique:"+$(this).text());
+});
+
+Class selector
+$(".class-button").click(function(){
+alert("Huu ni mfano wa Class:"+$(this).text());
+});
+
+Hiding h1
+$(".Button_Class").click(function(){
+$(".class_hide").hide();
+});
+
+Hiding other Headings
+$(".Class_Heading").click(function(){
+$(".Class_Heading").hide();
+});
+});
+</script>
+
+</head>
+<body>
+<h1 class="class-hide">Heading One</h1>
+<h2 class="class_Heading">Heading Two</h2>
+<h3 class="class-hide">Heading Three</h3>
+<h4 class="class-hide">Heading Four</h4>
+<h5 class="class-hide">Heading Five</h5>
+<h6 class="class-hide">Heading Six</h6>
+
+<button Class="Button Class">Hide the Headings</button><br><br>
+<button id="butto1">Button 1 to demostrate ID selector is clicked</button>
+<button class="class-button">Button 2 to demostrate Class selector is clicked</button>
+<button class="class-button">Button 3 to demostrate Class selector is clicked</button>
+<button class="class-button">Button 4 to demostrate Class selector is clicked</button>
+<button class="class-button">Button 5 to demostrate Class selector is clicked</button>
+<button class="class-button">Button 6 to demostrate Class selector is clicked</button>
+</body>
+</html>
